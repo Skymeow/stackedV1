@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="AlertView" id="iN0-l3-epB" customClass="AlertView" customModule="ShareExtension" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="192" height="156"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LVj-uW-lex">
+                    <rect key="frame" x="5" y="10" width="182" height="91"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="alert message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LqF-r0-Hc1">
+                    <rect key="frame" x="5" y="106" width="182" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Ytl-3B-Y4x"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LVj-uW-lex" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="0C4-it-Wfw"/>
+                <constraint firstItem="LVj-uW-lex" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="4i8-vg-9UV"/>
+                <constraint firstAttribute="trailing" secondItem="LVj-uW-lex" secondAttribute="trailing" constant="5" id="7Go-Yy-zDA"/>
+                <constraint firstAttribute="trailing" secondItem="LqF-r0-Hc1" secondAttribute="trailing" constant="5" id="Ceh-Wd-xSA"/>
+                <constraint firstItem="LqF-r0-Hc1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="QRz-1D-EIL"/>
+                <constraint firstAttribute="bottom" secondItem="LqF-r0-Hc1" secondAttribute="bottom" constant="25" id="VMa-ab-7aX"/>
+                <constraint firstItem="LqF-r0-Hc1" firstAttribute="top" secondItem="LVj-uW-lex" secondAttribute="bottom" constant="5" id="YIT-T4-x52"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="15"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="alertMsg" destination="LqF-r0-Hc1" id="Z6j-aX-LLx"/>
+            </connections>
+            <point key="canvasLocation" x="91" y="134"/>
+        </view>
+    </objects>
+</document>
