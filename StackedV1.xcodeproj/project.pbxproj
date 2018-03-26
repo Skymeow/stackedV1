@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F92BBBA620688D4F001952FC /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F92BBBA420688D14001952FC /* AlertView.xib */; };
+		F92BBBA820688EC2001952FC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F92BBBA720688EC2001952FC /* Alamofire.framework */; };
+		F92BBBA920688EC2001952FC /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F92BBBA720688EC2001952FC /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F980FDAB206792A60055DCFC /* DataConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F980FDAA206792A60055DCFC /* DataConverter.swift */; };
 		F9D501AA20683C5A0033E7A8 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D501A920683C5A0033E7A8 /* CommonCrypto.framework */; };
 		F9D501AB20683C5A0033E7A8 /* CommonCrypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F9D501A920683C5A0033E7A8 /* CommonCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F9D501B420688B640033E7A8 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D501B320688B640033E7A8 /* Networking.swift */; };
+		F9D501B620688B760033E7A8 /* KeyCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D501B520688B760033E7A8 /* KeyCenter.swift */; };
 		F9E9DB872063876800084734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E9DB862063876800084734 /* AppDelegate.swift */; };
 		F9E9DB892063876800084734 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E9DB882063876800084734 /* ViewController.swift */; };
 		F9E9DB8C2063876800084734 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E9DB8A2063876800084734 /* Main.storyboard */; };
@@ -18,7 +23,6 @@
 		F9E9DB9F2063883A00084734 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E9DB9E2063883A00084734 /* ShareViewController.swift */; };
 		F9E9DBA62063883A00084734 /* ShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F9E9DB9C2063883A00084734 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F9E9DBAC206389BC00084734 /* GetURL.js in Resources */ = {isa = PBXBuildFile; fileRef = F9E9DBAB206389BC00084734 /* GetURL.js */; };
-		F9E9DBB220638AD900084734 /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9E9DBB120638AD900084734 /* AlertView.xib */; };
 		F9E9DBB420638AEA00084734 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E9DBB320638AEA00084734 /* AlertView.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +44,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				F9D501AB20683C5A0033E7A8 /* CommonCrypto.framework in Embed Frameworks */,
+				F92BBBA920688EC2001952FC /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,11 +63,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F92BBBA420688D14001952FC /* AlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
+		F92BBBA720688EC2001952FC /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		F980FDA5206758980055DCFC /* StackedV1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StackedV1.entitlements; sourceTree = "<group>"; };
 		F980FDA6206758B10055DCFC /* ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareExtension.entitlements; sourceTree = "<group>"; };
 		F980FDAA206792A60055DCFC /* DataConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConverter.swift; sourceTree = "<group>"; };
 		F9C2101E2068389100829398 /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = Carthage/Build/iOS/CommonCrypto.framework; sourceTree = "<group>"; };
 		F9D501A920683C5A0033E7A8 /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = Carthage/Build/iOS/CommonCrypto.framework; sourceTree = "<group>"; };
+		F9D501B320688B640033E7A8 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		F9D501B520688B760033E7A8 /* KeyCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCenter.swift; sourceTree = "<group>"; };
 		F9E9DB832063876800084734 /* StackedV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackedV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E9DB862063876800084734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9E9DB882063876800084734 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,7 +84,6 @@
 		F9E9DBA12063883A00084734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		F9E9DBA32063883A00084734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9E9DBAB206389BC00084734 /* GetURL.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = GetURL.js; sourceTree = "<group>"; };
-		F9E9DBB120638AD900084734 /* AlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
 		F9E9DBB320638AEA00084734 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +93,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9D501AA20683C5A0033E7A8 /* CommonCrypto.framework in Frameworks */,
+				F92BBBA820688EC2001952FC /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,9 +123,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F9D501B720688B950033E7A8 /* Credentials */ = {
+			isa = PBXGroup;
+			children = (
+				F9D501B520688B760033E7A8 /* KeyCenter.swift */,
+			);
+			path = Credentials;
+			sourceTree = "<group>";
+		};
+		F9D501B820688BA50033E7A8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F9D501B320688B640033E7A8 /* Networking.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		F9E9DB7A2063876800084734 = {
 			isa = PBXGroup;
 			children = (
+				F92BBBA720688EC2001952FC /* Alamofire.framework */,
 				F9D501A920683C5A0033E7A8 /* CommonCrypto.framework */,
 				F9E9DB852063876800084734 /* StackedV1 */,
 				F9E9DB9D2063883A00084734 /* ShareExtension */,
@@ -145,6 +171,8 @@
 				F9E9DB8D2063876800084734 /* Assets.xcassets */,
 				F9E9DB8F2063876800084734 /* LaunchScreen.storyboard */,
 				F9E9DB922063876800084734 /* Info.plist */,
+				F9D501B820688BA50033E7A8 /* Service */,
+				F9D501B720688B950033E7A8 /* Credentials */,
 			);
 			path = StackedV1;
 			sourceTree = "<group>";
@@ -157,8 +185,8 @@
 				F9E9DBA02063883A00084734 /* MainInterface.storyboard */,
 				F9E9DBA32063883A00084734 /* Info.plist */,
 				F9E9DBAB206389BC00084734 /* GetURL.js */,
+				F92BBBA420688D14001952FC /* AlertView.xib */,
 				F9E9DBB320638AEA00084734 /* AlertView.swift */,
-				F9E9DBB120638AD900084734 /* AlertView.xib */,
 			);
 			path = ShareExtension;
 			sourceTree = "<group>";
@@ -268,8 +296,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9E9DBB220638AD900084734 /* AlertView.xib in Resources */,
 				F9E9DBAC206389BC00084734 /* GetURL.js in Resources */,
+				F92BBBA620688D4F001952FC /* AlertView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,9 +311,11 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/CommonCrypto.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 			);
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/CommonCrypto.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -298,9 +328,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9D501B620688B760033E7A8 /* KeyCenter.swift in Sources */,
 				F9E9DB892063876800084734 /* ViewController.swift in Sources */,
 				F980FDAB206792A60055DCFC /* DataConverter.swift in Sources */,
 				F9E9DB872063876800084734 /* AppDelegate.swift in Sources */,
+				F9D501B420688B640033E7A8 /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

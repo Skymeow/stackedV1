@@ -12,7 +12,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let webUrlStr = "https://medium.com/@ziadtamim/create-parallax-effect-with-uimotioneffect-3a3ae7aa1679"
+        Networking.instance.analyzeTime(url: webUrlStr) { (success, resultStr) in
+            if success {
+                print(resultStr)
+            }
+        }
     }
     
 }
