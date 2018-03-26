@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ShareExtension/ShareViewController.swift"
-            timestampString = "543650404.341779"
+            timestampString = "543654113.539417"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,59 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ShareExtension/ShareViewController.swift"
-            timestampString = "543650404.342037"
+            timestampString = "543654113.539806"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ShareExtension.ShareViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "ShareExtension"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/skyxu/code/IOS/StackedV1/ShareExtension/ShareViewController.swift"
-                  timestampString = "543650404.43379"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "1184">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__ObjC.NSSecureCoding&gt;, Swift.ImplicitlyUnwrappedOptional&lt;Swift.Error&gt;) -&gt; () in ShareExtension.ShareViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "ShareExtension"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/skyxu/code/IOS/StackedV1/ShareExtension/ShareViewController.swift"
-                  timestampString = "543650404.435454"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "24">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ShareExtension/ShareViewController.swift"
-            timestampString = "543650404.342268"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -122,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ShareExtension/ShareViewController.swift"
-            timestampString = "543650404.342489"
+            timestampString = "543654113.540042"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>

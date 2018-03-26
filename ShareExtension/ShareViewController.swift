@@ -12,10 +12,10 @@ import MobileCoreServices
 
 
 @objc (ShareViewController) class ShareViewController: UIViewController {
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         let extensionItem = extensionContext?.inputItems.first as! NSExtensionItem
         
         if let itemProvider = extensionItem.attachments?.first as? NSItemProvider {
@@ -25,12 +25,12 @@ import MobileCoreServices
                         let shareURL = URL(string: string)
                         print (shareURL!.absoluteString)
                     }
-            })
+                })
             } else if itemProvider.hasItemConformingToTypeIdentifier("public.url") {
                 itemProvider.loadItem(forTypeIdentifier: "public.url", options: nil, completionHandler: { (item, error) -> Void in
-                        if let url = item as? NSURL {
-                            print(url)
-                        }
+                    if let url = item as? NSURL {
+                        print(url)
+                    }
                 })
                 
             } else if itemProvider.hasItemConformingToTypeIdentifier(String(kUTTypePropertyList)) {

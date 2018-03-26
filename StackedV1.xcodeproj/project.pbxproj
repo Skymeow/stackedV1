@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F980FDAB206792A60055DCFC /* DataConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F980FDAA206792A60055DCFC /* DataConverter.swift */; };
+		F9D501AA20683C5A0033E7A8 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D501A920683C5A0033E7A8 /* CommonCrypto.framework */; };
+		F9D501AB20683C5A0033E7A8 /* CommonCrypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F9D501A920683C5A0033E7A8 /* CommonCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F9E9DB872063876800084734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E9DB862063876800084734 /* AppDelegate.swift */; };
 		F9E9DB892063876800084734 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E9DB882063876800084734 /* ViewController.swift */; };
 		F9E9DB8C2063876800084734 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E9DB8A2063876800084734 /* Main.storyboard */; };
@@ -30,6 +33,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		F9D501AC20683C5A0033E7A8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F9D501AB20683C5A0033E7A8 /* CommonCrypto.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F9E9DBAA2063883A00084734 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -46,6 +60,9 @@
 /* Begin PBXFileReference section */
 		F980FDA5206758980055DCFC /* StackedV1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StackedV1.entitlements; sourceTree = "<group>"; };
 		F980FDA6206758B10055DCFC /* ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareExtension.entitlements; sourceTree = "<group>"; };
+		F980FDAA206792A60055DCFC /* DataConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConverter.swift; sourceTree = "<group>"; };
+		F9C2101E2068389100829398 /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = Carthage/Build/iOS/CommonCrypto.framework; sourceTree = "<group>"; };
+		F9D501A920683C5A0033E7A8 /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = Carthage/Build/iOS/CommonCrypto.framework; sourceTree = "<group>"; };
 		F9E9DB832063876800084734 /* StackedV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackedV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E9DB862063876800084734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9E9DB882063876800084734 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9D501AA20683C5A0033E7A8 /* CommonCrypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +98,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F980FDA92067928F0055DCFC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F980FDAA206792A60055DCFC /* DataConverter.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F9C2101D2068389100829398 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9C2101E2068389100829398 /* CommonCrypto.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F9E9DB7A2063876800084734 = {
 			isa = PBXGroup;
 			children = (
+				F9D501A920683C5A0033E7A8 /* CommonCrypto.framework */,
 				F9E9DB852063876800084734 /* StackedV1 */,
 				F9E9DB9D2063883A00084734 /* ShareExtension */,
 				F9E9DB842063876800084734 /* Products */,
+				F9C2101D2068389100829398 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +137,7 @@
 		F9E9DB852063876800084734 /* StackedV1 */ = {
 			isa = PBXGroup;
 			children = (
+				F980FDA92067928F0055DCFC /* Helpers */,
 				F980FDA5206758980055DCFC /* StackedV1.entitlements */,
 				F9E9DB862063876800084734 /* AppDelegate.swift */,
 				F9E9DB882063876800084734 /* ViewController.swift */,
@@ -137,6 +174,8 @@
 				F9E9DB802063876800084734 /* Frameworks */,
 				F9E9DB812063876800084734 /* Resources */,
 				F9E9DBAA2063883A00084734 /* Embed App Extensions */,
+				F9C2102120683ABF00829398 /* ShellScript */,
+				F9D501AC20683C5A0033E7A8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,12 +275,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F9C2102120683ABF00829398 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/CommonCrypto.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/CommonCrypto.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F9E9DB7F2063876800084734 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F9E9DB892063876800084734 /* ViewController.swift in Sources */,
+				F980FDAB206792A60055DCFC /* DataConverter.swift in Sources */,
 				F9E9DB872063876800084734 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,7 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -392,7 +450,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -408,11 +466,18 @@
 				CODE_SIGN_ENTITLEMENTS = StackedV1/StackedV1.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A3KV3V94JT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = StackedV1/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sky.StackedV1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -426,11 +491,18 @@
 				CODE_SIGN_ENTITLEMENTS = StackedV1/StackedV1.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A3KV3V94JT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = StackedV1/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sky.StackedV1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
