@@ -36,6 +36,31 @@ class Networking {
                 print(json)
             }
         }
+    }
+    
+    
+    func getYoutubeDetail(youtubeUrl: String, completion: @escaping(_ success: Bool, _ result: Any) -> Void) {
+        let baseUrl = "https://www.googleapis.com/youtube/v3/videos/"
+        let videoId = youtubeUrl.getYoutubeId()!
+        let params = ["part": "snippet",
+                      "id": videoId,
+                      "key": KeyCenter.youtube_key
+                      ]
+        Alamofire.request("https://www.googleapis.com/youtube/v3/videos/", method: .get, parameters: params)
+            .validate(statusCode: 200..<300)
+            .responseJSON { response in
+                if (response.result.error == nil) {
+                    let json = response.result.value as? [String: Any]
+                    let i = json!["items"] as! NSArray
+                    
+
+                }
+                else {
+                    debugPrint("HTTP Request failed: \(response.result.error)")
+                }
+        }
+
         
     }
+    
 }
