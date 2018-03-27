@@ -39,10 +39,10 @@ class Networking {
     }
     
     
-    func getYoutubeDetail(youtubeUrl: String, completion: @escaping(_ success: Bool, _ result: Any) -> Void) {
+    func getYoutubeDetail(youtubeUrl: String, completion: @escaping(_ success: Bool, _ result: Video) -> Void) {
         let baseUrl = "https://www.googleapis.com/youtube/v3/videos/"
         let videoId = youtubeUrl.getYoutubeId()!
-        let params = ["part": "snippet",
+        let params = ["part": "snippet, contentDetails",
                       "id": videoId,
                       "key": KeyCenter.youtube_key
                       ]
@@ -50,10 +50,19 @@ class Networking {
             .validate(statusCode: 200..<300)
             .responseJSON { response in
                 if (response.result.error == nil) {
-                    let json = response.result.value as? [String: Any]
-                    let i = json!["items"] as! NSArray
+                    guard let json = response.result.value as? [String: Any] else { return }
+                    let i = json["items"] as AnyObject
+                    let rawDuration = i.value(forKeyPath: "contentDetails.duration") as! [Any]
+                    let rawVideoTitle = i.value(forKeyPath: "snippet.title") as! [Any]
+                    let rawThumbnailUrl = i.value(forKeyPath: "snippet.thumbnails.default.url") as! [Any]
                     
-
+                    var duration = rawDuration[0] as! String
+                    duration = duration.formatDuration()
+                    let videoTitle = rawVideoTitle[0] as! String
+                    let thumbnailUrl = rawThumbnailUrl[0] as! String
+                    let video = Video(thumbnailUrl: thumbnailUrl, duration: duration, videoTitle: videoTitle)
+                    completion(true, video)
+                   
                 }
                 else {
                     debugPrint("HTTP Request failed: \(response.result.error)")

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5E2C87F57609CC8E1A80EB4E /* Pods_ShareExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD2091D3152B8FE8044B26E3 /* Pods_ShareExtension.framework */; };
 		B8FF7492A927D6190C2640D0 /* Pods_StackedV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA68816198937AAFC01E48B8 /* Pods_StackedV1.framework */; };
+		F91BF9DC206AAC2E00C8777B /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91BF9DB206AAC2E00C8777B /* Video.swift */; };
 		F92BBBA620688D4F001952FC /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F92BBBA420688D14001952FC /* AlertView.xib */; };
 		F92BBBA820688EC2001952FC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F92BBBA720688EC2001952FC /* Alamofire.framework */; };
 		F92BBBA920688EC2001952FC /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F92BBBA720688EC2001952FC /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -72,6 +73,7 @@
 		D310FC8422E7CBB366D72610 /* Pods-ShareExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareExtension/Pods-ShareExtension.release.xcconfig"; sourceTree = "<group>"; };
 		D6EFF487FA1D8015EBF68650 /* Pods-ShareExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShareExtension/Pods-ShareExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		DA68816198937AAFC01E48B8 /* Pods_StackedV1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StackedV1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F91BF9DB206AAC2E00C8777B /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		F92BBBA420688D14001952FC /* AlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
 		F92BBBA720688EC2001952FC /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		F980FDA5206758980055DCFC /* StackedV1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StackedV1.entitlements; sourceTree = "<group>"; };
@@ -130,6 +132,14 @@
 				A40CA70D688F09F230B5E515 /* Pods-StackedV1.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F91BF9DD206AACC300C8777B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F91BF9DB206AAC2E00C8777B /* Video.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F980FDA92067928F0055DCFC /* Helpers */ = {
@@ -227,6 +237,7 @@
 				F9D501B820688BA50033E7A8 /* Service */,
 				F9D501B720688B950033E7A8 /* Credentials */,
 				F98409CD206A166D001DBEC1 /* UICustomClass */,
+				F91BF9DD206AACC300C8777B /* Model */,
 			);
 			path = StackedV1;
 			sourceTree = "<group>";
@@ -485,6 +496,7 @@
 				F98409C72069FFF7001DBEC1 /* Reg.swift in Sources */,
 				F980FDAB206792A60055DCFC /* DataConverter.swift in Sources */,
 				F98409CC206A1633001DBEC1 /* CustomNavigationController.swift in Sources */,
+				F91BF9DC206AAC2E00C8777B /* Video.swift in Sources */,
 				F9E9DB872063876800084734 /* AppDelegate.swift in Sources */,
 				F9D501B420688B640033E7A8 /* Networking.swift in Sources */,
 			);
