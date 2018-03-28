@@ -15,7 +15,11 @@
 		F92BBBA920688EC2001952FC /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F92BBBA720688EC2001952FC /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F980FDAB206792A60055DCFC /* DataConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F980FDAA206792A60055DCFC /* DataConverter.swift */; };
 		F98409C72069FFF7001DBEC1 /* Reg.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98409C62069FFF7001DBEC1 /* Reg.swift */; };
-		F98409CC206A1633001DBEC1 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98409CB206A1633001DBEC1 /* CustomNavigationController.swift */; };
+		F98409CC206A1633001DBEC1 /* CustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98409CB206A1633001DBEC1 /* CustomHeaderView.swift */; };
+		F9B918C8206B0738003EC5F9 /* PodcastDataServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B918C7206B0738003EC5F9 /* PodcastDataServer.swift */; };
+		F9B918CA206B53DE003EC5F9 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B918C9206B53DE003EC5F9 /* SnapKit.framework */; };
+		F9B918CB206B53DE003EC5F9 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F9B918C9206B53DE003EC5F9 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F9B918CD206B5DE3003EC5F9 /* SharedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B918CC206B5DE3003EC5F9 /* SharedTableViewCell.swift */; };
 		F9D501AA20683C5A0033E7A8 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D501A920683C5A0033E7A8 /* CommonCrypto.framework */; };
 		F9D501AB20683C5A0033E7A8 /* CommonCrypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F9D501A920683C5A0033E7A8 /* CommonCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F9D501B420688B640033E7A8 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D501B320688B640033E7A8 /* Networking.swift */; };
@@ -48,6 +52,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				F9B918CB206B53DE003EC5F9 /* SnapKit.framework in Embed Frameworks */,
 				F9D501AB20683C5A0033E7A8 /* CommonCrypto.framework in Embed Frameworks */,
 				F92BBBA920688EC2001952FC /* Alamofire.framework in Embed Frameworks */,
 			);
@@ -80,7 +85,10 @@
 		F980FDA6206758B10055DCFC /* ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareExtension.entitlements; sourceTree = "<group>"; };
 		F980FDAA206792A60055DCFC /* DataConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConverter.swift; sourceTree = "<group>"; };
 		F98409C62069FFF7001DBEC1 /* Reg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reg.swift; sourceTree = "<group>"; };
-		F98409CB206A1633001DBEC1 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		F98409CB206A1633001DBEC1 /* CustomHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderView.swift; sourceTree = "<group>"; };
+		F9B918C7206B0738003EC5F9 /* PodcastDataServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastDataServer.swift; sourceTree = "<group>"; };
+		F9B918C9206B53DE003EC5F9 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		F9B918CC206B5DE3003EC5F9 /* SharedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTableViewCell.swift; sourceTree = "<group>"; };
 		F9C2101E2068389100829398 /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = Carthage/Build/iOS/CommonCrypto.framework; sourceTree = "<group>"; };
 		F9D501A920683C5A0033E7A8 /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = Carthage/Build/iOS/CommonCrypto.framework; sourceTree = "<group>"; };
 		F9D501B320688B640033E7A8 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
@@ -109,6 +117,7 @@
 				F9D501AA20683C5A0033E7A8 /* CommonCrypto.framework in Frameworks */,
 				F92BBBA820688EC2001952FC /* Alamofire.framework in Frameworks */,
 				B8FF7492A927D6190C2640D0 /* Pods_StackedV1.framework in Frameworks */,
+				F9B918CA206B53DE003EC5F9 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,9 +179,17 @@
 		F98409CD206A166D001DBEC1 /* UICustomClass */ = {
 			isa = PBXGroup;
 			children = (
-				F98409CB206A1633001DBEC1 /* CustomNavigationController.swift */,
+				F98409CB206A1633001DBEC1 /* CustomHeaderView.swift */,
 			);
 			path = UICustomClass;
+			sourceTree = "<group>";
+		};
+		F9B918CE206B5DE9003EC5F9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F9B918CC206B5DE3003EC5F9 /* SharedTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		F9C2101D2068389100829398 /* Frameworks */ = {
@@ -197,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				F9D501B320688B640033E7A8 /* Networking.swift */,
+				F9B918C7206B0738003EC5F9 /* PodcastDataServer.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -204,6 +222,7 @@
 		F9E9DB7A2063876800084734 = {
 			isa = PBXGroup;
 			children = (
+				F9B918C9206B53DE003EC5F9 /* SnapKit.framework */,
 				F92BBBA720688EC2001952FC /* Alamofire.framework */,
 				F9D501A920683C5A0033E7A8 /* CommonCrypto.framework */,
 				F9E9DB852063876800084734 /* StackedV1 */,
@@ -238,6 +257,7 @@
 				F9D501B720688B950033E7A8 /* Credentials */,
 				F98409CD206A166D001DBEC1 /* UICustomClass */,
 				F91BF9DD206AACC300C8777B /* Model */,
+				F9B918CE206B5DE9003EC5F9 /* Cell */,
 			);
 			path = StackedV1;
 			sourceTree = "<group>";
@@ -435,17 +455,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-StackedV1/Pods-StackedV1-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -460,10 +474,12 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/CommonCrypto.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
 			);
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/CommonCrypto.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -491,12 +507,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9B918CD206B5DE3003EC5F9 /* SharedTableViewCell.swift in Sources */,
 				F9D501B620688B760033E7A8 /* KeyCenter.swift in Sources */,
 				F9E9DB892063876800084734 /* ListViewController.swift in Sources */,
 				F98409C72069FFF7001DBEC1 /* Reg.swift in Sources */,
 				F980FDAB206792A60055DCFC /* DataConverter.swift in Sources */,
-				F98409CC206A1633001DBEC1 /* CustomNavigationController.swift in Sources */,
+				F98409CC206A1633001DBEC1 /* CustomHeaderView.swift in Sources */,
 				F91BF9DC206AAC2E00C8777B /* Video.swift in Sources */,
+				F9B918C8206B0738003EC5F9 /* PodcastDataServer.swift in Sources */,
 				F9E9DB872063876800084734 /* AppDelegate.swift in Sources */,
 				F9D501B420688B640033E7A8 /* Networking.swift in Sources */,
 			);

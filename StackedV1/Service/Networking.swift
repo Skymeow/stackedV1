@@ -52,6 +52,7 @@ class Networking {
                 if (response.result.error == nil) {
                     guard let json = response.result.value as? [String: Any] else { return }
                     let i = json["items"] as AnyObject
+//                    key value coding (kVC)
                     let rawDuration = i.value(forKeyPath: "contentDetails.duration") as! [Any]
                     let rawVideoTitle = i.value(forKeyPath: "snippet.title") as! [Any]
                     let rawThumbnailUrl = i.value(forKeyPath: "snippet.thumbnails.default.url") as! [Any]
